@@ -15,6 +15,6 @@ jobs:
           registry: ghcr.io
           username: ${{ secrets.GITHUB_ACTOR }}
           password: ${{ secrets.GITHUB_TOKEN }}
-          path: Docker
+          build_file: Docker/Dockerfile
           cache: true
           cache_registry: cache
