@@ -11,7 +11,8 @@ jobs:
       - name: Kaniko build
         uses: aevea/action-kaniko@master
         with:
-          image: kaniko
+          image: simple-docker
+          tag: latest
           registry: ghcr.io
           username: ${{ secrets.GITHUB_ACTOR }}
           password: ${{ secrets.GITHUB_TOKEN }}
