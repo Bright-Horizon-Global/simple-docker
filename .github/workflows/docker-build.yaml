@@ -10,7 +10,8 @@ jobs:
         with:
           image: kaniko
           registry: ghcr.io
+          username: ${{ secrets.GITHUB_ACTOR }}
           password: ${{ secrets.GITHUB_TOKEN }}
           path: Docker
           cache: true
-          cache_registry: simple-docker/cache
+          cache_registry: cache
