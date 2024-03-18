@@ -9,5 +9,6 @@ jobs:
         uses: aevea/action-kaniko@master
         with:
           image: ghcr.io/${{ github.repository_owner }}/simple-flask:latest
+          password: ${{ secrets.GITHUB_TOKEN }}
           cache: true
           cache_registry: simple-docker/cache
